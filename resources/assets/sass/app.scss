@@ -1,0 +1,122 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Suravaram');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// .navbar-laravel {
+//   background-color: #fff;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+// }
+
+.textbox{
+    margin-top: 15rem;
+}
+
+.navbar-admin {
+    background-color: #FFCD00;
+    min-height: 75px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 74px;
+    left: 0;
+    background-color: #383a48;
+    overflow-x: hidden;
+    padding-top: 30px;
+  }
+  
+  .sidenav a {
+    padding: 10px 8px 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFE88B;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #51576D;
+    border-left: 6px solid #FFCD00;
+  }
+  
+  main.admin {
+    margin-top: 75px;
+    margin-left: 180px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .footer{font-size: 8px}
+  }
+
+  a.custom-card,
+  a.custom-card:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a.btn-ss2{
+    background-color: #8ACB88;
+    padding: 10px 10px 12px 10px;
+    color: #f1f1f1;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  a.btn-ss2:hover{
+    background-color: #8ACB88;
+    color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-left: none;
+  }
+
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    font-family: 'Suravaram', serif;
+    font-size: 20px;
+    margin-bottom: 60px; /* Margin bottom by footer height */
+  }
+  .footer {
+    font-family: 'Kalam', cursive;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+  }
+
+  .bg-dotted {
+    background-color: #F8F7F6;
+    border-style: dashed;
+    border-color: #cfc0bd;
+  }
+
+  .dot {
+    height: 30px;
+    width: 30px;
+    background-color: #cfc0bd;
+    border-radius: 50%;
+    display: inline;
+}
+
+.card:hover{
+  cursor: pointer;
+}

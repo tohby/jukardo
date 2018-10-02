@@ -1,0 +1,21 @@
+
+
+// Body
+$body-bg: #F8F9FA;
+
+// Typography
+$font-family: "Montserrat", Arial, sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+.nav-link{
+    font-size: 1.3rem;
+    color: #f7f2f0;
+}
+.nav-link :hover{
+    color: #CA415F;
+    background-color: #f7f2f0;
+}
+.navbar-brand{
+    font-family: "Montserrat", Arial, sans-serif;
+}
