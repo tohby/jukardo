@@ -80,7 +80,13 @@
         <div class="sidenav">
             <a href="/admin/portfolio/create" class="btn btn-ss2" role="button"><i class="fas fa-plus"></i> Add Project</a>
             <a href="/admin/portfolio"><i class="fas fa-folder" style="margin-right:10px"></i>Projects</a>
-            <a href="#clients"><i class="fas fa-envelope" style="margin-right:10px"></i>Messages</a>
+            <a href="/admin/messages"><i class="fas fa-envelope" style="margin-right:10px"></i>Messages 
+                    @if(count($unread) > 0)
+                        <span class="badge badge-pill badge-light"><b>
+                        {!!$unread!!}
+                        </b></span>
+                    @endif
+            </a>
             <a href="#contact"><i class="fas fa-quote-right" style="margin-right:10px"></i>Testimonials</a>
         </div>
         <main class="py-4 admin">

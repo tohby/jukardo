@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 
 class Messages extends Controller
@@ -14,7 +15,7 @@ class Messages extends Controller
     public function index()
     {
         //
-        return 'messages go here';
+        return view('admin.messages.index');
     }
 
     /**
