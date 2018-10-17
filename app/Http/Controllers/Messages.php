@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Message;
 use Illuminate\Http\Request;
 
 class Messages extends Controller
@@ -15,7 +15,12 @@ class Messages extends Controller
     public function index()
     {
         //
-        return view('admin.messages.index');
+        $messages = Message::orderBy('created_at', 'asc')->get();
+        $unreadMessages = Message::where('status', 'unread')->get();
+        $readMessages = Message::where('status', 'read')->get();
+        return view('admin.messages.index')->with('messages', $messages)
+                    ->with('unreadMessages', $unreadMessages)
+                    ->with('readMessages', $readMessages);
     }
 
     /**
@@ -48,6 +53,7 @@ class Messages extends Controller
     public function show($id)
     {
         //
+        return view('admin.messages.show');
     }
 
     /**
@@ -56,10 +62,10 @@ class Messages extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
-    }
+    // public function edit($id)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.

@@ -87,7 +87,7 @@
                         </b></span>
                     @endif
             </a>
-            <a href="#contact"><i class="fas fa-quote-right" style="margin-right:10px"></i>Testimonials</a>
+            {{-- <a href="#contact"><i class="fas fa-quote-right" style="margin-right:10px"></i>Testimonials</a> --}}
         </div>
         <main class="py-4 admin">
             <div class="container-fluid">

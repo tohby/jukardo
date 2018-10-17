@@ -41,7 +41,7 @@
         @endforeach @endif
         <div class="col">
             <a href="/admin/portfolio/create" class="custom-card">
-                <div class="card bg-dotted shadow p-1 mb-5 rounded">
+                <div class="card bg-dotted p-1 mb-5 rounded">
                     <div class="card-body text-center">
                         <p class="card-text">Create a new project</p>
                     </div>
